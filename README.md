@@ -11,12 +11,3 @@ class-notes/
         ├── gsc_lib/         # 예시) 모듈/라이브러리
         └── my_main/         # 예시) 실행 코드
 ```
-
-## 루틴
-```
-cd ~/class-notes
-git pull
-git add .
-git commit -m "오늘 공부한 핵심 내용"
-git push
-```
