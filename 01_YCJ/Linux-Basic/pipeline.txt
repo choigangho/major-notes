@@ -1,0 +1,20 @@
+1) redirection
+	입출력 방식 변경 (str -> any)
+
+2) pipeline 
+명령 = [cp, rm, tail, grep, find . . . ]
+	in 명령 out  |  in 명령 out
+	in 명령 (out | in) 명령 out
+
+예문)
+cat test.txt | grep "gsc" 		           ->     in 명령 (out | in) 명령 out      			 ->  ( O )
+
+cat test.txt > out.txt | grep "gsc"       ->      in 명령 out | (in) 명령 out     			 -> grep에 입력이 없음 ( X )
+
+cat test.txt | grep "gsc" > gsc.txt       ->      in 명령 (out | in) 명령 redirectioned out        -> out을 file로 redirection ( O )
+cat gsc.txt
+
+
+덤) 
+find . -type f -name test.txt  		->   찾기 . (현재 디렉터리) 에서 file 타입의 이름이 test.txt인 것
+
