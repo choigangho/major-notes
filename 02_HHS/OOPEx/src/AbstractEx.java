@@ -17,6 +17,6 @@ class UseAbs extends MyAbs {
 
 public class AbstractEx {
     public static void main(String[] args) {
-         new MyAbs(); // 추상화 클래스는 객체화가 불가능
+    //     new MyAbs(); // 추상화 클래스는 객체화가 불가능
     }
 }
