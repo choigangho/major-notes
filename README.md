@@ -2,7 +2,7 @@
 
 ## 폴더 구조 
 
-```text
+```text 
 major-notes/
 ├── .gitignore
 ├── README.md
